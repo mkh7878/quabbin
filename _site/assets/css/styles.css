@@ -1,109 +1,80 @@
-
+/* General Styles */
 body {
-    background-color: #FCBB92;
-    text-align: center;
-}
-p {
-    color: black;
-    font-size: 17px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #1f4547;
+  text-align: center;
 }
 
-a {
-  /* text-decoration: black; */
-  color: #6AD2C6;
+/* Header Styles */
+header {
+  background-color: #edeed0;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #1f4547;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+nav ul li a:hover {
+  color: #451b2c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+a{
+  color: #451b2c;
 }
 
 h1 {
-    font-size: clamp(40px, 7vw, 90px);
-    /* color: #6AD2C6; */
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
 }
 
-.h1white {
-    font-size: clamp(40px, 7vw, 90px);
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #192e1e;
+  color: #edeed0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-
-h2 {
-    font-size: 3vw;
-    color: #FEECAB;
-    text-shadow: 1.4px 1.4px 3px rgba(0, 0, 0, 0.5);
+.bullets li {
+  list-style-type: square; /* For square bullets */
+  margin-left: 20px; /* Adjust the left margin for spacing */
+  font-size: 20px;
+  padding-bottom: 10px;
 }
-
-/* Make the navbar text white */
-.navbar {
-    background-color: transparent !important; /* Ensure no background color */
-  }
-  
-  .navbar .nav-link {
-    color: white !important; /* Ensure the links are white */
-  }
-  
-  .navbar .navbar-brand {
-    color: white !important; /* Ensure the brand text is white */
-  }
-  
-  /* Optionally, change the color of the links on hover */
-  .navbar .nav-link:hover {
-    color: #6AD2C6 !important; /* Slightly lighter white on hover */
-  }
-  
-
-  #hpbanner {
-    background-image: url('/assets/images/notextbillboard.jpg');
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    min-height: 40vw; /* Set a height or use padding to control size */
-    display: flex; /* Optional: to align content */
-    justify-content: center; /* Optional: horizontal center content */
-    color: #fff; /* Optional: text color for better visibility */
+.bullet-row {
+  background-color: #edeed0;
+  color: #192e1e;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
 }
-
-.image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .img-fluid {
-    transition: opacity 0.5s ease; /* Smooth transition on hover */
-  }
-  
-  .image-container:hover .img-fluid {
-    opacity: 0.2; /* Fades image to 20% opacity on hover */
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Change text color as needed */
-    font-size: 24px;
-    font-weight: bold;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease; /* Smooth transition for text */
-    text-align: center;
-  }
-  
-  .image-container:hover .overlay-text {
-    opacity: 1; /* Shows text on hover */
-  }
-  
-
-  .tools-button {
-    background-color: rgba(255, 255, 255, 0.44); /* White background with 44% opacity */
-    color: black; /* Black text color */
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    border: 2px solid white; /* Black border */
-    padding: 3px 10px; /* Padding for the button */
-    text-align: center; /* Center align text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    border-radius: 5px; 
-    margin-top: 5px;
+p {
+  font-size: 20px;
 }
