@@ -22,7 +22,7 @@ title: Mae Horak Graphic Design
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Graphic Designer Mae Horak from San Diego portfolio of past work
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/quabbin" # the subpath of your site, e.g. /blog
 # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jekyll
 
